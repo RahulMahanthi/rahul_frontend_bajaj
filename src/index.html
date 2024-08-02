@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABCD123</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #007bff;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ced4da;
+      font-size: 16px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ced4da;
+    }
+    #error {
+      color: red;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    #response {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      white-space: pre-wrap;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JSON API Interface</h1>
+  <textarea id="jsonInput" rows="10" placeholder='Enter JSON here...'></textarea><br>
+  <button id="submit">Submit</button>
+  <div id="error"></div>
+  <select id="filter" multiple>
+    <option value="alphabets">Alphabets</option>
+    <option value="numbers">Numbers</option>
+    <option value="highest_alphabet">Highest Alphabet</option>
+  </select>
+  <div id="response"></div>
+  <script src="app.js"></script>
+</body>
+</html>
